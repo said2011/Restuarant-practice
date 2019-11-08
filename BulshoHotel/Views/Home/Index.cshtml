@@ -1,0 +1,197 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container ">
+    <h3 class="text-center text-info">Welcome to Bulsho Restuarant </h3>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-8">
+            <h3 class="text-center text-info" >Fadlan wax Dalbo</h3>
+            <div class="row" >
+               <div class="col-md-3">
+                   <label for="firstname">First Name</label>
+                   <input class="form-control" type="text" name="firstname" id="firstname" value="" required/>
+               </div>
+               <div class="col-md-3">
+                   <label for="lastname">Last Name</label>
+                   <input class="form-control" type="text" name="lastname" id="lastname" value="" required/>
+               </div>
+               <div class="col-md-3">
+                   <label for="phone">Phone</label>
+                   <input class="form-control" type="tel" name="phone" id="phone" value="" required/>
+               </div>
+               <div class="col-md-3">
+                   <label for="email">Email</label>
+                   <input class="form-control" type="email" name="email" id="email" value="" required/>
+               </div>
+               <div class="col-md-12">
+                   <label for="address">Address</label>
+                   <input class="form-control" type="text" name="address" id="address" value="" required/>
+               </div>
+
+               <div class="col-md-4">
+                   <label for="city">City</label>
+                   <select class="custom-select" id="city">
+                       <option value="" disabled-selected>--Magaalo--</option>
+                       <option value="muqdisho" >Muqdisho</option>
+                       <option value="columbus">Columbus</option>
+                   </select>
+               </div>
+
+               <div class="col-md-4">
+                   <label for="state">State</label>
+                   <select class="custom-select" id="state">
+                       <option value="" disabled-selected>--Wadanka--</option>
+                       <option value="somalia">Somalia</option>
+                       <option value="usa">USA</option>
+                   </select>
+               </div>
+
+
+
+               <div class="col-md-4">
+                   <label for="zipcode">Zip Code</label>
+                   <input class="form-control" type="text" name="zipcode" id="zipcode" value="" required/>
+               </div>
+
+    
+               <div class="col-md-2">
+                   <div class="custom-control custom-checkbox">
+                       <input type="checkbox"  class="custom-control-input " id="bariis"/>
+                       <label class="custom-control-label" for="bariis"> Bariis</label>
+                   </div>
+               </div>
+               <div class="col-md-2">
+                   <div class="custom-control custom-checkbox">
+                       <input type="checkbox"  class="custom-control-input " id="hilib"/>
+                       <label class="custom-control-label" for="hilib"> Hilib</label>
+                   </div>
+               </div>
+               <div class="col-md-2">
+                   <div class="custom-control custom-checkbox">
+                       <input type="checkbox"  class="custom-control-input " id="sanbuus"/>
+                       <label class="custom-control-label" for="sanbuus"> Sanbuus</label>
+                   </div>
+               </div>
+               <div class="col-md-2">
+                   <div class="custom-control custom-checkbox">
+                       <input type="checkbox"  class="custom-control-input " id="shah"/>
+                       <label class="custom-control-label" for="shah"> Shah</label>
+                   </div>
+               </div>
+               <div class="col-md-2">
+                   <div class="custom-control custom-checkbox">
+                       <input type="checkbox"  class="custom-control-input " id="baasto"/>
+                       <label class="custom-control-label" for="baasto"> Baasto</label>
+                   </div>
+               </div>
+               
+               <div class="col-md-2">
+                   <div class="custom-control custom-checkbox">
+                       <input type="checkbox"  class="custom-control-input " id="chicken"/>
+                       <label class="custom-control-label" for="chicken"> Chicken</label>
+                   </div>
+               </div>
+
+               <!--halkan ku paste garee payment code -->
+
+               <div class="col-md-12">
+                        <hr class="mb-4">
+                        <h4 class="mb-3">Payment</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="cc-name">Name on card</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                        <small class="text-muted">Full name as displayed on card</small>
+                        <div class="invalid-feedback">
+                            Name on card is required
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="cc-number">Credit card number</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            Credit card number is required
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="cc-expiration">Expiration</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            Expiration date required
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="cc-cvv">CVV</label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                        <div class="invalid-feedback">
+                            Security code required
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit" id="btnsubmit">Dir dalabka</button>
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <!--paste the order info-->
+
+             <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">Your Cart Info</span>
+                    <span class="badge badge-secondary badge-pill" id="cart"></span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <h6 class="my-0">Name:</h6>
+                        <span class="text-muted" id="customerName"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <h6 class="my-0">Email:</h6>
+                        <span class="text-muted" id="customerEmail"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <h6 class="my-0">Phone:</h6>
+                        <span class="text-muted" id="customerPhone"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <h6 class="my-0">Address:</h6>
+                        <span class="text-muted" id="customerAddress"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <h6 class="my-0">City:</h6>
+                        <span class="text-muted" id="customerCity"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <h6 class="my-0">State:</h6>
+                        <span class="text-muted" id="customerState"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <h6 class="my-0">ZipCode:</h6>
+                        <span class="text-muted" id="customerZipCode"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <h6 class="my-0">Food Ordered:</h6>
+                        <span class="text-muted" id="customerOrder"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total (USD)</span>
+                        <strong>
+                            <span id="totalCost"></span>
+                        </strong>
+                    </li>
+                </ul>
+
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Promo code" id="discount">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-secondary">Redeem</button>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+
+</div>

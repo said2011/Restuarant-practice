@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/fadxi/.dotnet/store/|arch|/|tfm|",
+      "/Users/fadxi/.nuget/packages"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{5DAAD53F-05B9-4490-91AA-12C2F1FBEC60}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BulshoHotel/Views/Home/Index.cshtml">
+    <Files>
+      <File FileName="BulshoHotel/wwwroot/js/site.js" Line="24" Column="9" />
+      <File FileName="BulshoHotel/Views/Home/Index.cshtml" Line="3" Column="2" />
+      <File FileName="BulshoHotel/Views/Shared/_Layout.cshtml" Line="13" Column="36" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BulshoHotel" expanded="True">
+            <Node name="BulshoHotel" expanded="True">
+              <Node name="Views" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BulshoHotel PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
